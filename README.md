@@ -10,7 +10,7 @@ This is the final project for the University of Sao Paulo subject "SCC-0902 - Or
  - Matheus Henrique Dias Cirillo - 12547750
 
 
-#Running the program
+## Running the program
 ### Dependencies
 In order to clone this repository with the needed submodules you should clone it with ``` git clone --recurse-submodules git@github.com:studas/world-war-z.git ```.
 
