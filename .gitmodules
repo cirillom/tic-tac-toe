@@ -1,0 +1,6 @@
+[submodule "modules/ICMC-assembly-preprocessor"]
+	path = modules/ICMC-assembly-preprocessor
+	url = https://github.com/lucasgpulcinelli/ICMC-assembly-preprocessor
+[submodule "modules/ICMC-Processor-Sim-Installer"]
+	path = modules/ICMC-Processor-Sim-Installer
+	url = git@github.com:cirillom/ICMC-Processor-Sim-Installer.git
