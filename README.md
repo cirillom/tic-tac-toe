@@ -1,4 +1,4 @@
-# World War Z
+# Tic Tac Toe
 
 ## Introduction
 
