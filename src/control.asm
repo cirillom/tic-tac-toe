@@ -23,7 +23,7 @@ initialize_game:
     store c7, r1
     store c8, r1
     store c9, r1
-    rts
+    jmp game_loop
 
 change_player:
     loadn r0, #1
@@ -51,12 +51,11 @@ p1_win:
     load r0, p1points
     inc r0
     store p1points, r0
-    call initialize_game
-    jmp game_loop
+    jmp initialize_game
 
 p2_win:
     load r0, p2points
     inc r0
     store p2points, r0
-    call initialize_game
-    jmp game_loop
+    jmp initialize_game
+    

@@ -1,4 +1,8 @@
 
+draw_screen:
+    call static_elements
+    rts
+
 start_print:
     loadi r2, r0
     loadn r3, #'\0'

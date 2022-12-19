@@ -1,3 +1,4 @@
+
 static_elements:    
     loadn r0, #titulo
     loadn r1, $position(eval((40-int(defs["titulo_len"]))//2),0)
