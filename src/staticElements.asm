@@ -7,6 +7,14 @@ static_elements:
     loadn r0, #p1
     loadn r1, $position(0,3)
     call start_print
+    loadn r0, #10
+    cmp r0, r7
+    jne not_pone_yellow
+    loadn r0, #yepone
+    loadn r1, $position(0,3)
+    call start_print
+    not_pone_yellow:
+
 
     loadn r0, #px
     loadn r1, $position(eval((int(defs["p1_len"])-int(defs["px_len"]))//2),4)
@@ -15,6 +23,13 @@ static_elements:
     loadn r0, #p2
     loadn r1, $position(eval(40-int(defs["p1_len"])),3)
     call start_print
+    loadn r0, #1
+    cmp r0, r7
+    jne not_ptwo_yellow
+    loadn r0, #yeptwo
+    loadn r1, $position(eval(40-int(defs["p1_len"])),3)
+    call start_print
+    not_ptwo_yellow:
 
     loadn r0, #po
     loadn r1, $position(eval((40-int(defs["p1_len"]))+((int(defs["p2_len"])-int(defs["po_len"]))//2)),4)
