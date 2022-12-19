@@ -32,17 +32,15 @@ change_player:
     loadn r7, #1
 
 inp:
-    inchar r0
+    inchar r5
     loadn r1, #255
-    cmp r0, r1
+    cmp r5, r1
     jeq inp
     rts
 
 change_to_p2:
-    loadn r7, #3
+    loadn r7, #10
     rts
-
-end_game:
 
 can_continue_game:
     rts
@@ -51,11 +49,34 @@ p1_win:
     load r0, p1points
     inc r0
     store p1points, r0
+    loadn r0, #winx
+    loadn r1, $position(eval((40-int(defs["winx_len"]))//2),28)
+    call start_print
+    call inp
+    call clean_last_line
     jmp initialize_game
 
 p2_win:
     load r0, p2points
     inc r0
     store p2points, r0
+    loadn r0, #wino
+    loadn r1, $position(eval((40-int(defs["wino_len"]))//2),28)
+    call start_print
+    call inp
+    call clean_last_line
     jmp initialize_game
     
+end_game:
+    loadn r0, #velha
+    loadn r1, $position(eval((40-int(defs["velha_len"]))//2),28)
+    call start_print
+    call inp
+    call clean_last_line
+    jmp initialize_game
+
+clean_last_line:
+    loadn r0, #cleanline
+    loadn r1, $position(eval((40-int(defs["cleanline_len"]))//2),28)
+    call start_print
+    rts

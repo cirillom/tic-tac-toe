@@ -9,7 +9,7 @@ static_elements:
     call start_print
 
     loadn r0, #px
-    loadn r1, $position(eval((int(defs["p1_len"])-int(defs["px_len"]))//2),5)
+    loadn r1, $position(eval((int(defs["p1_len"])-int(defs["px_len"]))//2),4)
     call start_print
 
     loadn r0, #p2
@@ -17,7 +17,7 @@ static_elements:
     call start_print
 
     loadn r0, #po
-    loadn r1, $position(eval((40-int(defs["p1_len"]))+((int(defs["p2_len"])-int(defs["po_len"]))//2)),5)
+    loadn r1, $position(eval((40-int(defs["p1_len"]))+((int(defs["p2_len"])-int(defs["po_len"]))//2)),4)
     call start_print
 
     loadn r0, #tictacline1
