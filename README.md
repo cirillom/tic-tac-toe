@@ -20,3 +20,6 @@ You'll also need the simulator binarie files, in order to install it just type `
 
 ### The game
 In order to run the game you type the command ```make run``` in your terminal and the simulator window should open.
+
+## Gameplay and Explanation
+[Gameplay video](https://1drv.ms/u/s!AqONW8dOLoXTo8JnQdHZCRF0OIrrGQ?e=7ncRNY)
